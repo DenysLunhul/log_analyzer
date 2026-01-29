@@ -6,10 +6,7 @@ class EnricherTransformer(Component):
         self.slow = slow
 
     def process(self, data):
-        data_list = list(data)  # Convert generator to list
-        if data_list:
-            headers = data_list[0].keys()  # Get headers if needed
-        for row in data_list:
+        for row in data:
             row['isSlow'] = row['responseTime'] > self.slow
             row['is_critical_service'] = row['service'] in ["API_Gateway", "Model_Inference_v1"]
             yield row
