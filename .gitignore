@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+output/csv/*.csv
+output/json/*.json
+input/csv/*.csv
+input/json/*.json
+
+# Keep directory structure
+!output/csv/.gitkeep
+!output/json/.gitkeep
+!input/csv/.gitkeep
+!input/json/.gitkeep
+
+# Logs
+*.log
