@@ -1,5 +1,4 @@
 from etl.core.pipeline import Pipeline
-from etl.core import decorators
 from etl.extractors.CSVExtractor import CSVExtractor
 from etl.extractors.JSONExtractor import JSONExtractor
 from etl.sinks.CSVSink import CSVSink
