@@ -1,7 +1,9 @@
 from etl.core.baseClass import Component
 import datetime
+from etl.core.decorators import track_stats
 
 class TypeCasterTransformer(Component):
+    @track_stats
     def process(self, data):
         for row in data:
             try:
