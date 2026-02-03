@@ -5,5 +5,6 @@ class ConsoleSink(Component):
         super().__init__()
 
     def process(self, data):
-        for _ in data:
-            print(_)
+        for row in data:
+            print(row)
+            yield row
